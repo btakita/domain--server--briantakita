@@ -1,0 +1,16 @@
+{
+  "name": "@btakita/domain--browser--briantakita",
+  "module": "src/index.ts",
+  "type": "module",
+  "dependencies": {
+    "@btakita/domain--all--blog": "workspace:*",
+    "@ctx-core/object": "^28.2.2",
+    "vanjs-core": "^1.2.6"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
