@@ -4,7 +4,8 @@
   "type": "module",
   "dependencies": {
     "@btakita/domain--all--blog": "workspace:*",
-    "@ctx-core/object": "^28.2.2",
+    "@ctx-core/object": "^29.0.0",
+    "@ctx-core/vanjs": "^1.6.1",
     "vanjs-core": "^1.2.6"
   },
   "devDependencies": {
