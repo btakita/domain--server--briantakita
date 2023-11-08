@@ -5,7 +5,7 @@
   "dependencies": {
     "@btakita/domain--all--blog": "workspace:*",
     "@ctx-core/object": "^29.0.0",
-    "@ctx-core/vanjs": "1.7.2",
+    "@ctx-core/vanjs": "2.1.0",
     "vanjs-core": "^1.2.6"
   },
   "devDependencies": {
