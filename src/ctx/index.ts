@@ -1,1 +1,1 @@
-export * from './browser__ctx.ts'
+export * from './browser__ctx.js'
