@@ -4,8 +4,8 @@
   "type": "module",
   "dependencies": {
     "@btakita/domain--all--blog": "workspace:*",
-    "ctx-core": "^4.8.0",
-    "relementjs": "^0.15.0"
+    "ctx-core": "^4.8.1",
+    "relementjs": "^0.15.2"
   },
   "devDependencies": {
     "bun-types": "latest"
