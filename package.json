@@ -3,7 +3,7 @@
   "module": "src/index.ts",
   "type": "module",
   "dependencies": {
-    "@btakita/domain--all--blog": "workspace:*",
+    "@btakita/domain--any--blog": "workspace:*",
     "ctx-core": "^4.8.1",
     "relementjs": "^0.15.2"
   },
