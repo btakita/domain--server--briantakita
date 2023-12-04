@@ -5,7 +5,7 @@
   "dependencies": {
     "@btakita/domain--any--blog": "workspace:*",
     "ctx-core": "^4.9.1",
-    "relementjs": "^0.20.1"
+    "relementjs": "^0.20.4"
   },
   "devDependencies": {
     "bun-types": "latest"
