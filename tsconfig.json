@@ -1,9 +1,8 @@
 {
   "compilerOptions": {
-    "lib": ["ESNext"],
     "module": "esnext",
     "target": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "nodenext",
     "moduleDetection": "force",
     "allowImportingTsExtensions": true,
     "noEmit": true,
@@ -11,12 +10,11 @@
     "strict": true,
     "downlevelIteration": true,
     "skipLibCheck": true,
-    "jsx": "react-jsx",
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
     "allowJs": true,
     "types": [
-      "bun-types" // add Bun global
     ]
   }
 }
