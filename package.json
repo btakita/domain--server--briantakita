@@ -8,7 +8,7 @@
   "dependencies": {
     "@btakita/domain--any--blog": "workspace:*",
     "ctx-core": "^5.36.0",
-    "relementjs": "^0.60.2"
+    "relementjs": "^0.61.1"
   },
   "devDependencies": {
     "bun-types": "latest"
