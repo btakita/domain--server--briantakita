@@ -7,7 +7,7 @@
     "./package.json": "./package.json"
   },
   "dependencies": {
-    "@btakita/domain--any--blog": "workspace:*",
+    "@rappstack/domain--any--blog": "workspace:*",
     "ctx-core": "^5.38.1",
     "relementjs": "^0.64.1"
   },
