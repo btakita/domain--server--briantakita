@@ -1,20 +1,20 @@
 {
-  "name": "@btakita/domain--browser--briantakita",
-  "module": "index.ts",
-  "type": "module",
-  "exports": {
-    ".": "./index.ts",
-    "./package.json": "./package.json"
-  },
-  "dependencies": {
-    "@rappstack/domain--any--blog": "workspace:*",
-    "ctx-core": "^5.38.1",
-    "relementjs": "^0.64.1"
-  },
-  "devDependencies": {
-    "bun-types": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5.3.3"
-  }
+	"name": "@btakita/domain--browser--briantakita",
+	"module": "index.ts",
+	"type": "module",
+	"exports": {
+		".": "./index.ts",
+		"./package.json": "./package.json"
+	},
+	"dependencies": {
+		"@rappstack/domain--any--blog": "workspace:*",
+		"ctx-core": "^5.38.1",
+		"relementjs": "^0.64.2"
+	},
+	"devDependencies": {
+		"bun-types": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5.3.3"
+	}
 }
