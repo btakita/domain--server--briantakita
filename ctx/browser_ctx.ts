@@ -1,4 +1,4 @@
-import { blog_ctx__new } from '@rappstack/domain--any--blog'
+import { blog_ctx__new } from '@rappstack/domain--any--blog/ctx'
 import { globalThis__prop__ensure } from 'ctx-core/object'
 import { relement__use } from 'relementjs'
 import { browser__relement } from 'relementjs/browser'
