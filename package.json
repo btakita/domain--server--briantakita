@@ -8,8 +8,8 @@
 	},
 	"dependencies": {
 		"@rappstack/domain--any--blog": "workspace:*",
-		"ctx-core": "^6.5.1",
-		"relementjs": "^0.74.1"
+		"ctx-core": "^6.5.3",
+		"relementjs": "^0.74.3"
 	},
 	"devDependencies": {
 		"bun-types": "latest"
