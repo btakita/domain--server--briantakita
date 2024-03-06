@@ -4,6 +4,7 @@
 	"type": "module",
 	"exports": {
 		".": "./index.ts",
+		"./env": "./env/index.ts",
 		"./package.json": "./package.json"
 	},
 	"dependencies": {
