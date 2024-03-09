@@ -1,16 +1,22 @@
 {
-	"name": "@btakita/domain--browser--briantakita",
-	"module": "index.ts",
+	"name": "@btakita/domain--server--briantakita",
 	"type": "module",
 	"exports": {
 		".": "./index.ts",
 		"./env": "./env/index.ts",
 		"./package.json": "./package.json"
 	},
+	"files": [
+		"*.d.ts",
+		"*.js",
+		"*.json",
+		"env"
+	],
 	"dependencies": {
 		"@rappstack/domain--any--blog": "workspace:*",
+		"@rappstack/domain--server--blog": "workspace:*",
 		"ctx-core": "^6.5.4",
-		"relementjs": "^0.74.4"
+		"rebuildjs": "^0.65.1"
 	},
 	"devDependencies": {
 		"bun-types": "latest"
