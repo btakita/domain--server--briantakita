@@ -4,13 +4,15 @@
 	"exports": {
 		".": "./index.ts",
 		"./env": "./env/index.ts",
+		"./jsonld": "./jsonld/index.ts",
 		"./package.json": "./package.json"
 	},
 	"files": [
 		"*.d.ts",
 		"*.js",
 		"*.json",
-		"env"
+		"env",
+		"jsonld"
 	],
 	"dependencies": {
 		"@rappstack/domain--any--blog": "workspace:*",
