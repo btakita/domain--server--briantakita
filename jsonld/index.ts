@@ -14,22 +14,26 @@ import { site__author_, site__title_, site__website_ } from '@rappstack/domain--
 import { social_a1_ } from '@rappstack/domain--server/social'
 import { import_meta_env_ } from 'ctx-core/env'
 import { url__join } from 'ctx-core/uri'
-import { nullish__none_, tup, type wide_ctx_T } from 'rebuildjs/server'
+import { nullish__none_, request_ctx_T, tup, type wide_ctx_T } from 'rebuildjs/server'
 import logo_svg from '../public/assets/images/logo.svg'
 const ns = import_meta_env_().NODE_ENV === 'production' ? 'app' : ''
 export const [
-	WebSite_id_ref_
-] = ns_id_id_ref_be_jsonld_pair_(ns, 'WebSite', ctx=>{
-	return nullish__none_(tup(site__website_(ctx), site__title_(ctx)), (
-		site__website, site_title
-	)=><WebSite>{
-		'@type': 'WebSite',
-		'@id': url__join(site__website, '#WebSite'),
-		url: site__website,
-		name: site_title,
-		publisher: Person_id_ref_(ctx),
-	})
-})
+	[WebSite_id_ref_],
+	WebSite_id_,
+] = [
+	ns_id_id_ref_be_jsonld_pair_(ns, 'WebSite', ctx=>{
+		return nullish__none_(tup(site__website_(ctx), site__title_(ctx)), (
+			site__website, site_title
+		)=><WebSite>{
+			'@type': 'WebSite',
+			'@id': url__join(site__website, '#WebSite'),
+			url: site__website,
+			name: site_title,
+			publisher: Person_id_ref_(ctx),
+		})
+	}),
+	(ctx:request_ctx_T)=><string>WebSite_id_ref_(ctx)['@id'],
+]
 export const [
 	Organization_id_ref_
 ] = ns_id_id_ref_be_jsonld_pair_(ns, 'Organization', ctx=>{
@@ -104,22 +108,23 @@ export const [
 	return nullish__none_(tup(site__website_(ctx), site__author_(ctx), social_a1_(ctx)), (
 		site__website, site__author, social_a1
 	)=><Person>{
-			'@type': 'Person',
-			'@id': url__join(site__website, '#Person'),
-			url: site__website,
-			name: site__author,
-			image: 'https://gravatar.com/avatar/a0599814ceddc2e283792f4e47c57f5e',
-			alumniOf: uop_Organization_id_ref_(ctx),
-			jobTitle: full_stack_engineer_DefinedTerm_id_ref_(ctx),
-			knowsAbout: [
-				typescript_Thing_id_ref_(ctx),
-				javascript_Thing_id_ref_(ctx),
-			],
-			hasOccupation: [
-				sr_full_stack_engineer_Occupation_id_ref_(ctx),
-				digital_marketer_Occupation_id_ref_(ctx),
-			],
-			sameAs: [
+		'@type': 'Person',
+		'@id': url__join(site__website, '#Person'),
+		url: site__website,
+		name: site__author,
+		image: 'https://gravatar.com/avatar/a0599814ceddc2e283792f4e47c57f5e',
+		alumniOf: uop_Organization_id_ref_(ctx),
+		jobTitle: full_stack_engineer_DefinedTerm_id_ref_(ctx),
+		knowsAbout: [
+			typescript_Thing_id_ref_(ctx),
+			javascript_Thing_id_ref_(ctx),
+		],
+		hasOccupation: [
+			sr_full_stack_engineer_Occupation_id_ref_(ctx),
+			digital_marketer_Occupation_id_ref_(ctx),
+		],
+		sameAs:
+			[
 				...social_a1.filter(social=>social.active).map(social=>social.href),
 				'https://linktr.ee/briantakita',
 				'https://www.youtube.com/channel/UC3gg23rxm1sM43sQWRGKEqQ',
@@ -168,7 +173,7 @@ export const [
 				'https://stocktwits.com/briantakita',
 				'https://briantakita.brandyourself.com/',
 			],
-		})
+	})
 })
 export const [
 	typescript_Thing_id_ref_,
