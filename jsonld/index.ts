@@ -240,6 +240,8 @@ export const [
 		'@id': 'https://www.wikidata.org/wiki/Q630226',
 		'@type': 'Organization',
 		name: 'University of the Pacific',
+		url: 'https://www.pacific.edu/',
+		logo: 'https://www.pacific.edu/sites/default/files/index_1.ico',
 	}
 })
 export const [
