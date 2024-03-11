@@ -1,5 +1,6 @@
-import type {
+import {
 	AboutPage,
+	CollegeOrUniversity,
 	ContactPage,
 	DefinedTerm,
 	ImageObject,
@@ -113,7 +114,7 @@ export const [
 		url: site__website,
 		name: site__author,
 		image: 'https://gravatar.com/avatar/a0599814ceddc2e283792f4e47c57f5e',
-		alumniOf: uop_Organization_id_ref_(ctx),
+		alumniOf: uop_CollegeOrUniversity_id_ref_(ctx),
 		jobTitle: full_stack_engineer_DefinedTerm_id_ref_(ctx),
 		knowsAbout: [
 			typescript_Thing_id_ref_(ctx),
@@ -234,11 +235,11 @@ export const [
 	})
 })
 export const [
-	uop_Organization_id_ref_,
-] = ns_id_id_ref_be_jsonld_pair_(ns, 'uop_Organization', ()=>{
-	return <Organization>{
+	uop_CollegeOrUniversity_id_ref_,
+] = ns_id_id_ref_be_jsonld_pair_(ns, 'uop_CollegeOrUniversity', ()=>{
+	return <CollegeOrUniversity>{
 		'@id': 'https://www.wikidata.org/wiki/Q630226',
-		'@type': 'Organization',
+		'@type': 'CollegeOrUniversity',
 		name: 'University of the Pacific',
 		url: 'https://www.pacific.edu/',
 		logo: 'https://www.pacific.edu/sites/default/files/index_1.ico',
