@@ -11,8 +11,7 @@ import {
 	WebSite
 } from '@btakita/schema-dts'
 import { ns_id_be_id_ref_be_jsonld_pair_ } from '@rappstack/domain--server/jsonld'
-import { site__author_, site__title_, site__website_ } from '@rappstack/domain--server/site'
-import { social_a1_ } from '@rappstack/domain--server/social'
+import { site__author_, site__social_a1_, site__title_, site__website_ } from '@rappstack/domain--server/site'
 import { import_meta_env_ } from 'ctx-core/env'
 import { url__join } from 'ctx-core/uri'
 import { nullish__none_, request_ctx_T, tup, type wide_ctx_T } from 'rebuildjs/server'
@@ -106,8 +105,8 @@ export const [
 export const [
 	Person_id_ref_
 ] = ns_id_be_id_ref_be_jsonld_pair_(ns, 'Person', ctx=>{
-	return nullish__none_(tup(site__website_(ctx), site__author_(ctx), social_a1_(ctx)), (
-		site__website, site__author, social_a1
+	return nullish__none_(tup(site__website_(ctx), site__author_(ctx), site__social_a1_(ctx)), (
+		site__website, site__author, site__social_a1
 	)=><Person>{
 		'@type': 'Person',
 		'@id': url__join(site__website, '#Person'),
@@ -126,7 +125,7 @@ export const [
 		],
 		sameAs:
 			[
-				...social_a1.filter(social=>social.active).map(social=>social.href),
+				...site__social_a1.filter(social=>social.active).map(social=>social.href),
 				'https://linktr.ee/briantakita',
 				'https://www.youtube.com/channel/UC3gg23rxm1sM43sQWRGKEqQ',
 				'https://twitter.com/BrianTakita/',
