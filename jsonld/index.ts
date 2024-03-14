@@ -146,6 +146,8 @@ export const [
 				'https://www.slideshare.net/brian_takita',
 				'https://www.pinterest.com/briantakita/',
 				'https://www.quora.com/profile/Brian-Takita',
+				'https://unsplash.com/@btakita',
+				'https://www.pexels.com/@brian-takita-1083012530/',
 				'https://substack.com/@btak',
 				'https://www.tiktok.com/@briantakita',
 				'https://about.me/brian_takita',
