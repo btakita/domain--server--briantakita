@@ -9,12 +9,12 @@ import {
 	Person,
 	Thing,
 	WebSite
-} from '@btakita/schema-dts'
+} from 'schema-dts'
 import { ns_id_be_id_ref_be_jsonld_pair_ } from '@rappstack/domain--server/jsonld'
 import { site__author_, site__social_a1_, site__title_, site__website_ } from '@rappstack/domain--server/site'
 import { import_meta_env_ } from 'ctx-core/env'
 import { url__join } from 'ctx-core/uri'
-import { nullish__none_, request_ctx_T, tup, type wide_ctx_T } from 'rebuildjs/server'
+import { nullish__none_, type request_ctx_T, tup, type wide_ctx_T } from 'rebuildjs/server'
 import logo_svg from '../public/assets/images/logo.svg'
 const ns = import_meta_env_().NODE_ENV === 'production' ? 'app' : ''
 export const [
