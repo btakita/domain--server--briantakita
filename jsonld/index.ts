@@ -143,6 +143,7 @@ export const [
 				'https://stackoverflow.com/users/142571/brian-takita3',
 				'https://security.stackexchange.com/users/294675/brian-takita',
 				'https://ossrank.com/c/70584-brian-takita',
+				'https://bbs.archlinux.org/profile.php?id=157185',
 				'https://www.slideshare.net/brian_takita',
 				'https://www.pinterest.com/briantakita/',
 				'https://www.quora.com/profile/Brian-Takita',
