@@ -120,10 +120,6 @@ export const [
 			typescript_Thing_id_ref_(ctx),
 			javascript_Thing_id_ref_(ctx),
 		],
-		hasOccupation: [
-			sr_full_stack_engineer_Occupation_id_ref_(ctx),
-			digital_marketer_Occupation_id_ref_(ctx),
-		],
 		sameAs: [
 			...site__social_a1.filter(social=>social.active).map(social=>social.href),
 			'https://linktr.ee/briantakita',
