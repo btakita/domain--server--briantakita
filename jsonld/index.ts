@@ -26,7 +26,7 @@ export const [
 			site__website, site_title
 		)=><WebSite>{
 			'@type': 'WebSite',
-			'@id': jsonld_id__new(site__website, '#WebSite'),
+			'@id': jsonld_id__new(site__website, 'WebSite'),
 			url: site__website,
 			name: site_title,
 			publisher: Person_id_ref_(ctx),
@@ -41,7 +41,7 @@ export const [
 		site__website, site__title
 	)=><Organization>{
 		'@type': 'Organization',
-		'@id': jsonld_id__new(site__website, '#Organization'),
+		'@id': jsonld_id__new(site__website, 'Organization'),
 		url: site__website,
 		name: site__title,
 		logo: logo_ImageObject_id_ref_(ctx),
@@ -55,7 +55,7 @@ export const [
 		site__website
 	)=><ImageObject>{
 		'@type': 'ImageObject',
-		'@id': jsonld_id__new(site__website, '#logo'),
+		'@id': jsonld_id__new(site__website, 'logo'),
 		url: url__join(site__website, logo_svg),
 		width: '256px',
 		height: '256px',
@@ -71,7 +71,7 @@ export const [
 			site__website, site__author
 		)=><AboutPage>{
 			'@type': 'AboutPage',
-			'@id': jsonld_id__new(url__join(site__website, 'about'), '#AboutPage'),
+			'@id': jsonld_id__new(url__join(site__website, 'about'), 'AboutPage'),
 			url: url__join(site__website, 'about'),
 			name: 'About | ' + site__author,
 			about: Person_id_ref_(ctx),
@@ -91,7 +91,7 @@ export const [
 	)=>{
 		return <ContactPage>{
 			'@type': 'ContactPage',
-			'@id': jsonld_id__new(site__website, '#ContactPage'),
+			'@id': jsonld_id__new(site__website, 'ContactPage'),
 			url: url__join(site__website, '#ContactPage'),
 			name: 'Contact ' + site__author,
 			inLanguage: 'en-us',
@@ -111,7 +111,7 @@ export const [
 			site__website, site__author, site__social_a1
 		)=><Person>{
 			'@type': 'Person',
-			'@id': jsonld_id__new(site__website, '#Person'),
+			'@id': jsonld_id__new(site__website, 'Person'),
 			url: site__website,
 			name: site__author,
 			image: Person_image,
@@ -186,7 +186,7 @@ export const [
 	return nullish__none_(tup(site__website_(ctx)), (
 		site__website
 	)=><Thing>{
-		'@id': jsonld_id__new(site__website, '#typescript_Thing'),
+		'@id': jsonld_id__new(site__website, 'typescript_Thing'),
 		'@type': 'Thing',
 		'name': 'Typescript',
 		alternateName: 'ts',
@@ -199,7 +199,7 @@ export const [
 	return nullish__none_(tup(site__website_(ctx)), (
 		site__website
 	)=><Thing>{
-		'@id': jsonld_id__new(site__website, '#javascript_Thing'),
+		'@id': jsonld_id__new(site__website, 'javascript_Thing'),
 		'@type': 'Thing',
 		'name': 'Javascript',
 		alternateName: 'js',
@@ -212,7 +212,7 @@ export const [
 	return nullish__none_(tup(site__website_(ctx)), (
 		site__website
 	)=><Thing>{
-		'@id': jsonld_id__new(site__website, '#software_engineering_Thing'),
+		'@id': jsonld_id__new(site__website, 'software_engineering_Thing'),
 		'@type': 'Thing',
 		'name': 'Software Engineering',
 		sameAs: 'https://en.wikipedia.org/wiki/Software_engineering'
@@ -226,7 +226,7 @@ export const [
 	)=>{
 		const full_stack_engineer_description = 'Develops many interoperable apps + open source libraries that are simple & small in size. Creates flat architectures that scale large & small. These libraries & apps build on each other. Reactive programming with general purpose contexts. Precise & scalable domain ontology. These techniques remove incidental complexity & bloat that come with other programming paradigms.'
 		return <Occupation>{
-			'@id': jsonld_id__new(site__website, '#sr_full_stack_engineer_Occupation'),
+			'@id': jsonld_id__new(site__website, 'sr_full_stack_engineer_Occupation'),
 			'@type': 'Occupation',
 			name: 'Sr. Full Stack Engineer',
 			description: full_stack_engineer_description,
@@ -264,7 +264,7 @@ export const [
 	)=>{
 		const digital_marketer_description = 'Performs full-featured Digital Marketing Services. Excels at creating engaging websites/apps, technical SEO, & automating systems.'
 		return <Occupation>{
-			'@id': jsonld_id__new(site__website, '#digital_marketer_Occupation'),
+			'@id': jsonld_id__new(site__website, 'digital_marketer_Occupation'),
 			'@type': 'Occupation',
 			name: 'Digital Marketer',
 			description: digital_marketer_description,
@@ -308,7 +308,7 @@ export const [
 	return nullish__none_(tup(site__website_(ctx)), (
 		site__website
 	)=><DefinedTerm>{
-		'@id': jsonld_id__new(site__website, '#full_stack_engineer_DefinedTerm'),
+		'@id': jsonld_id__new(site__website, 'full_stack_engineer_DefinedTerm'),
 		'@type': 'DefinedTerm',
 		'name': 'Full Stack Engineer',
 		'alternateName': 'Full Stack Web Developer',
