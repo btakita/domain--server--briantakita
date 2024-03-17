@@ -173,6 +173,7 @@ export const [
 				'https://hashnode.com/@btakita',
 				'https://www.flickr.com/photos/27218486%40N02',
 				'https://community.cloudflare.com/badges/29/hot-link?username=brian.takita',
+				'https://www.apollo.io/people/Brian/Takita/54a281b57468693cdd0a2128',
 				'https://stocktwits.com/briantakita',
 				'https://briantakita.brandyourself.com/',
 			],
