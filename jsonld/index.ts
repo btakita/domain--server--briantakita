@@ -1,3 +1,8 @@
+import { ns_id_be_id_ref_be_jsonld_pair_ } from '@rappstack/domain--server/jsonld'
+import { site__author_, site__social_a1_, site__title_, site__website_ } from '@rappstack/domain--server/site'
+import { import_meta_env_ } from 'ctx-core/env'
+import { url__join } from 'ctx-core/uri'
+import { nullish__none_, type request_ctx_T, tup, type wide_ctx_T } from 'rebuildjs/server'
 import {
 	AboutPage,
 	CollegeOrUniversity,
@@ -10,11 +15,6 @@ import {
 	Thing,
 	WebSite
 } from 'schema-dts'
-import { ns_id_be_id_ref_be_jsonld_pair_ } from '@rappstack/domain--server/jsonld'
-import { site__author_, site__social_a1_, site__title_, site__website_ } from '@rappstack/domain--server/site'
-import { import_meta_env_ } from 'ctx-core/env'
-import { url__join } from 'ctx-core/uri'
-import { nullish__none_, type request_ctx_T, tup, type wide_ctx_T } from 'rebuildjs/server'
 import logo_svg from '../public/assets/images/logo.svg'
 const ns = import_meta_env_().NODE_ENV === 'production' ? 'app' : ''
 export const [
@@ -102,8 +102,9 @@ export const [
 		}
 	})
 })
+export const Person_image = 'https://gravatar.com/avatar/a0599814ceddc2e283792f4e47c57f5e'
 export const [
-	Person_id_ref_
+	Person_id_ref_,
 ] = ns_id_be_id_ref_be_jsonld_pair_(ns, 'Person', ctx=>{
 	return nullish__none_(tup(site__website_(ctx), site__author_(ctx), site__social_a1_(ctx)), (
 		site__website, site__author, site__social_a1
@@ -112,7 +113,7 @@ export const [
 		'@id': url__join(site__website, '#Person'),
 		url: site__website,
 		name: site__author,
-		image: 'https://gravatar.com/avatar/a0599814ceddc2e283792f4e47c57f5e',
+		image: Person_image,
 		alumniOf: uop_CollegeOrUniversity_id_ref_(ctx),
 		jobTitle: full_stack_engineer_DefinedTerm_id_ref_(ctx),
 		knowsAbout: [
