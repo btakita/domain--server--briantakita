@@ -147,8 +147,8 @@ export const [
 				'https://codeberg.org/btak',
 				'https://www.pinterest.com/briantakita/',
 				'https://www.quora.com/profile/Brian-Takita',
-				'https://unsplash.com/@btakita',
 				'https://www.pexels.com/@brian-takita-1083012530/',
+				'https://unsplash.com/@btakita',
 				'https://substack.com/@btak',
 				'https://www.tiktok.com/@briantakita',
 				'https://about.me/brian_takita',
@@ -176,6 +176,8 @@ export const [
 				'https://www.apollo.io/people/Brian/Takita/54a281b57468693cdd0a2128',
 				'https://stocktwits.com/briantakita',
 				'https://briantakita.brandyourself.com/',
+				'https://www.scamadviser.com/account/profile/1283793',
+				'https://www.listennotes.com/@briantakita/',
 			],
 		})
 	}),
