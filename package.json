@@ -18,12 +18,12 @@
 		"@rappstack/domain--any--blog": "workspace:*",
 		"@rappstack/domain--server--blog": "workspace:*",
 		"ctx-core": "^6.6.2",
-		"rebuildjs": "^0.66.2"
+		"rebuildjs": "^0.66.3"
 	},
 	"devDependencies": {
 		"bun-types": "latest"
 	},
 	"peerDependencies": {
-		"typescript": "^5.4.2"
+		"typescript": "^5.4.3"
 	}
 }
