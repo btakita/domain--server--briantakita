@@ -178,6 +178,8 @@ export const [
 				'https://briantakita.brandyourself.com/',
 				'https://www.scamadviser.com/account/profile/1283793',
 				'https://www.listennotes.com/@briantakita/',
+				'https://community.haxe.org/u/btakita/summary',
+				'https://help.nextcloud.com/u/btak/summary',
 			],
 		})
 	}),
