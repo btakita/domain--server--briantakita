@@ -182,6 +182,7 @@ export const [
 				'https://community.haxe.org/u/btakita/summary',
 				'https://help.nextcloud.com/u/btak/summary',
 				'https://dribbble.com/btak',
+				'https://bugzilla.mozilla.org/user_profile?user_id=752132',
 			],
 		})
 	}),
