@@ -16,7 +16,8 @@ import {
 	WebSite
 } from 'schema-dts'
 import logo_svg from '../public/assets/images/logo.svg'
-const ns = import_meta_env_().NODE_ENV === 'production' ? 'app' : ''
+// const ns = import_meta_env_().NODE_ENV === 'production' ? 'app' : ''
+const ns = ''
 export const [
 	[WebSite_id_ref_],
 	WebSite_id_,
@@ -80,8 +81,8 @@ export const [
 			isPartOf: WebSite_id_ref_(ctx)
 		})
 	}),
-	(ctx:wide_ctx_T<typeof ns>)=><string>AboutPage_id_ref_(ctx)['@id'],
-	(ctx:wide_ctx_T<typeof ns>)=><string>AboutPage_(ctx).description,
+	(ctx:request_ctx_T)=><string>AboutPage_id_ref_(ctx)['@id'],
+	(ctx:request_ctx_T)=><string>AboutPage_(ctx).description,
 ]
 export const [
 	ContactPage_id_ref_
@@ -180,6 +181,7 @@ export const [
 				'https://www.listennotes.com/@briantakita/',
 				'https://community.haxe.org/u/btakita/summary',
 				'https://help.nextcloud.com/u/btak/summary',
+				'https://dribbble.com/btak',
 			],
 		})
 	}),
