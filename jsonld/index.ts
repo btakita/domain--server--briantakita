@@ -76,7 +76,8 @@ export const [
 			url: url__join(site__website, 'about'),
 			name: 'About | ' + site__author,
 			about: Person_id_ref_(ctx),
-			description: 'Creates efficient systems that grow with you',
+			description:
+				'Brian Takita creates efficient full stack software systems that grow with you. No web system is too big to too small. From marketing sites, copy, articles, & SEO. To full featured web & mobile apps. Brian Takita\'s custom software is crafted to be efficient, engaging for your audience, & search-engine friendly. He uses the latest AI tools & effective skills at copyrighting & UI design to move your goals forward.',
 			inLanguage: 'en-us',
 			isPartOf: WebSite_id_ref_(ctx)
 		})
