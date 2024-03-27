@@ -185,6 +185,7 @@ export const [
 				'https://bugzilla.mozilla.org/user_profile?user_id=752132',
 				'https://www.itninja.com/user/btak',
 				'https://community.auth0.com/u/brian.takita',
+				'https://gist.github.com/btakita',
 			],
 		})
 	}),
