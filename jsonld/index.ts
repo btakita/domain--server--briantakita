@@ -1,8 +1,7 @@
 import { jsonld_id__new, ns_id_be_id_ref_be_jsonld_pair_ } from '@rappstack/domain--server/jsonld'
 import { site__author_, site__social_a1_, site__title_, site__website_ } from '@rappstack/domain--server/site'
-import { import_meta_env_ } from 'ctx-core/env'
 import { url__join } from 'ctx-core/uri'
-import { nullish__none_, type request_ctx_T, tup, type wide_ctx_T } from 'rebuildjs/server'
+import { nullish__none_, type request_ctx_T, tup } from 'rebuildjs/server'
 import {
 	AboutPage,
 	CollegeOrUniversity,
@@ -184,6 +183,8 @@ export const [
 				'https://help.nextcloud.com/u/btak/summary',
 				'https://dribbble.com/btak',
 				'https://bugzilla.mozilla.org/user_profile?user_id=752132',
+				'https://www.itninja.com/user/btak',
+				'https://community.auth0.com/u/brian.takita',
 			],
 		})
 	}),
