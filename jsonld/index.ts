@@ -186,6 +186,7 @@ export const [
 				'https://www.itninja.com/user/btak',
 				'https://community.auth0.com/u/brian.takita',
 				'https://gist.github.com/btakita',
+				'https://truthsocial.com/@brian__takita',
 			],
 		})
 	}),
