@@ -143,7 +143,6 @@ export const [
 				'https://security.stackexchange.com/users/294675/brian-takita',
 				'https://ossrank.com/c/70584-brian-takita',
 				'https://bbs.archlinux.org/profile.php?id=157185',
-				'https://www.slideshare.net/brian_takita',
 				'https://gitlab.com/btakita',
 				'https://codeberg.org/btak',
 				'https://www.pinterest.com/briantakita/',
@@ -166,6 +165,7 @@ export const [
 				'https://www.meetup.com/Los-Angeles-Gophers/members/109554982',
 				'https://foursquare.com/briant9631966',
 				'https://www.diigo.com/profile/briantakita',
+				'https://www.slideshare.net/brian_takita',
 				'https://www.slideshare.net/BrianTakita',
 				'https://deep-cut.fm/profile/65e7579ec4c0c5001eddebb0',
 				'https://www.last.fm/user/briantakita',
@@ -187,6 +187,20 @@ export const [
 				'https://community.auth0.com/u/brian.takita',
 				'https://gist.github.com/btakita',
 				'https://truthsocial.com/@brian__takita',
+				'https://asciinema.org/~btak',
+				'https://codepen.io/btak',
+				'https://codesandbox.io/u/btakita',
+				'https://jsfiddle.net/btakita/fyqha01r/', // follow
+				'https://glitch.com/@btakita', // follow
+				'https://www.creative-tim.com/user-profile/brianakita', // follow
+				'https://jsitor.com/5IaDtF4ag1V', // follow
+				'https://output.jsbin.com/motoger/2/quiet', // follow
+				'https://replit.com/@btakita', // nofollow
+				'https://speakerdeck.com/btakita', // nofollow
+				'https://open.spotify.com/user/1245434884',
+				'https://stackblitz.com/@btakita', // nofollow
+				'https://www.twitch.tv/briantakita', // follow
+				'https://vimeo.com/briantakita',
 			],
 		})
 	}),
