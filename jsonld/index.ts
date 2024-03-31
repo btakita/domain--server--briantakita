@@ -201,6 +201,7 @@ export const [
 				'https://stackblitz.com/@btakita', // nofollow
 				'https://www.twitch.tv/briantakita', // follow
 				'https://vimeo.com/briantakita',
+				'https://forum.nim-lang.org/profile/btak',
 			],
 		})
 	}),
