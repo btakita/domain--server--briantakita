@@ -1,5 +1,5 @@
-import { jsonld_id__new, ns_id_be_id_ref_be_jsonld_pair_ } from '@rappstack/domain--server/jsonld'
-import { site__author_, site__social_a1_, site__title_, site__website_ } from '@rappstack/domain--server/site'
+import { jsonld_id__new, ns_id_be_id_ref_id_jsonld_pair_ } from '@rappstack/domain--server/jsonld'
+import { site__author_a1_, site__social_a1_, site__title_, site__website_ } from '@rappstack/domain--server/site'
 import { url__join } from 'ctx-core/uri'
 import { nullish__none_, type request_ctx_T, tup } from 'rebuildjs/server'
 import {
@@ -21,7 +21,7 @@ export const [
 	[WebSite_id_ref_],
 	WebSite_id_,
 ] = [
-	ns_id_be_id_ref_be_jsonld_pair_(ns, 'WebSite', ctx=>{
+	ns_id_be_id_ref_id_jsonld_pair_(ns, 'WebSite', ctx=>{
 		return nullish__none_(tup(site__website_(ctx), site__title_(ctx)), (
 			site__website, site_title
 		)=><WebSite>{
@@ -36,7 +36,7 @@ export const [
 ]
 export const [
 	Organization_id_ref_
-] = ns_id_be_id_ref_be_jsonld_pair_(ns, 'Organization', ctx=>{
+] = ns_id_be_id_ref_id_jsonld_pair_(ns, 'Organization', ctx=>{
 	return nullish__none_(tup(site__website_(ctx), site__title_(ctx)), (
 		site__website, site__title
 	)=><Organization>{
@@ -50,7 +50,7 @@ export const [
 })
 export const [
 	logo_ImageObject_id_ref_,
-] = ns_id_be_id_ref_be_jsonld_pair_(ns, 'logo_ImageObject', ctx=>{
+] = ns_id_be_id_ref_id_jsonld_pair_(ns, 'logo_ImageObject', ctx=>{
 	return nullish__none_(tup(site__website_(ctx)), (
 		site__website
 	)=><ImageObject>{
@@ -66,14 +66,14 @@ export const [
 	AboutPage_id_,
 	AboutPage__description_,
 ] = [
-	ns_id_be_id_ref_be_jsonld_pair_(ns, 'AboutPage', ctx=>{
-		return nullish__none_(tup(site__website_(ctx), site__author_(ctx)), (
-			site__website, site__author
+	ns_id_be_id_ref_id_jsonld_pair_(ns, 'AboutPage', ctx=>{
+		return nullish__none_(tup(site__website_(ctx), site__author_a1_(ctx)), (
+			site__website, site__author_a1
 		)=><AboutPage>{
 			'@type': 'AboutPage',
 			'@id': jsonld_id__new(url__join(site__website, 'about'), 'AboutPage'),
 			url: url__join(site__website, 'about'),
-			name: 'About | ' + site__author,
+			name: 'About | ' + site__author_a1[0].name,
 			about: Person_id_ref_(ctx),
 			description:
 				'Brian Takita creates efficient full stack software systems that grow with you. No web system is too big to too small. From marketing sites, copy, articles, & SEO. To full featured web & mobile apps. Brian Takita\'s custom software is crafted to be efficient, engaging for your audience, & search-engine friendly. He uses the latest AI tools & effective skills at copyrighting & UI design to move your goals forward.',
@@ -86,15 +86,15 @@ export const [
 ]
 export const [
 	ContactPage_id_ref_
-] = ns_id_be_id_ref_be_jsonld_pair_(ns, 'ContactPage', ctx=>{
-	return nullish__none_(tup(site__website_(ctx), site__author_(ctx)), (
-		site__website, site__author
+] = ns_id_be_id_ref_id_jsonld_pair_(ns, 'ContactPage', ctx=>{
+	return nullish__none_(tup(site__website_(ctx), site__author_a1_(ctx)), (
+		site__website, site__author_a1
 	)=>{
 		return <ContactPage>{
 			'@type': 'ContactPage',
 			'@id': jsonld_id__new(site__website, 'ContactPage'),
 			url: url__join(site__website, '#ContactPage'),
-			name: 'Contact ' + site__author,
+			name: 'Contact ' + site__author_a1[0].name,
 			inLanguage: 'en-us',
 			isPartOf: WebSite_id_ref_(ctx),
 			about: Person_id_ref_(ctx),
@@ -107,15 +107,11 @@ export const [
 	[Person_id_ref_,],
 	Person_id_
 ] = [
-	ns_id_be_id_ref_be_jsonld_pair_(ns, 'Person', ctx=>{
-		return nullish__none_(tup(site__website_(ctx), site__author_(ctx), site__social_a1_(ctx)), (
-			site__website, site__author, site__social_a1
+	ns_id_be_id_ref_id_jsonld_pair_(ns, 'Person', ctx=>{
+		return nullish__none_(tup(site__author_a1_(ctx), site__social_a1_(ctx)), (
+			site__author_a1, site__social_a1
 		)=><Person>{
-			'@type': 'Person',
-			'@id': jsonld_id__new(site__website, 'Person'),
-			url: site__website,
-			name: site__author,
-			image: Person_image,
+			...site__author_a1[0],
 			alumniOf: uop_CollegeOrUniversity_id_ref_(ctx),
 			jobTitle: full_stack_engineer_DefinedTerm_id_ref_(ctx),
 			knowsAbout: [
@@ -209,7 +205,7 @@ export const [
 ]
 export const [
 	typescript_Thing_id_ref_,
-] = ns_id_be_id_ref_be_jsonld_pair_(ns, 'typescript_Thing', ctx=>{
+] = ns_id_be_id_ref_id_jsonld_pair_(ns, 'typescript_Thing', ctx=>{
 	return nullish__none_(tup(site__website_(ctx)), (
 		site__website
 	)=><Thing>{
@@ -222,7 +218,7 @@ export const [
 })
 export const [
 	javascript_Thing_id_ref_,
-] = ns_id_be_id_ref_be_jsonld_pair_(ns, 'javascript_Thing', ctx=>{
+] = ns_id_be_id_ref_id_jsonld_pair_(ns, 'javascript_Thing', ctx=>{
 	return nullish__none_(tup(site__website_(ctx)), (
 		site__website
 	)=><Thing>{
@@ -235,7 +231,7 @@ export const [
 })
 export const [
 	software_engineering_Thing_id_ref_,
-] = ns_id_be_id_ref_be_jsonld_pair_(ns, 'software_engineering_Thing', ctx=>{
+] = ns_id_be_id_ref_id_jsonld_pair_(ns, 'software_engineering_Thing', ctx=>{
 	return nullish__none_(tup(site__website_(ctx)), (
 		site__website
 	)=><Thing>{
@@ -247,7 +243,7 @@ export const [
 })
 export const [
 	sr_full_stack_engineer_Occupation_id_ref_
-] = ns_id_be_id_ref_be_jsonld_pair_(ns, 'sr_full_stack_engineer_Occupation', ctx=>{
+] = ns_id_be_id_ref_id_jsonld_pair_(ns, 'sr_full_stack_engineer_Occupation', ctx=>{
 	return nullish__none_(tup(site__website_(ctx)), (
 		site__website
 	)=>{
@@ -285,7 +281,7 @@ export const [
 })
 export const [
 	digital_marketer_Occupation_id_ref_
-] = ns_id_be_id_ref_be_jsonld_pair_(ns, 'digital_marketer_Occupation', ctx=>{
+] = ns_id_be_id_ref_id_jsonld_pair_(ns, 'digital_marketer_Occupation', ctx=>{
 	return nullish__none_(tup(site__website_(ctx)), (
 		site__website
 	)=>{
@@ -320,7 +316,7 @@ export const [
 })
 export const [
 	uop_CollegeOrUniversity_id_ref_,
-] = ns_id_be_id_ref_be_jsonld_pair_(ns, 'uop_CollegeOrUniversity', ()=>{
+] = ns_id_be_id_ref_id_jsonld_pair_(ns, 'uop_CollegeOrUniversity', ()=>{
 	return <CollegeOrUniversity>{
 		'@id': 'https://www.wikidata.org/wiki/Q630226',
 		'@type': 'CollegeOrUniversity',
@@ -331,7 +327,7 @@ export const [
 })
 export const [
 	full_stack_engineer_DefinedTerm_id_ref_,
-] = ns_id_be_id_ref_be_jsonld_pair_(ns, 'full_stack_engineer_DefinedTerm', ctx=>{
+] = ns_id_be_id_ref_id_jsonld_pair_(ns, 'full_stack_engineer_DefinedTerm', ctx=>{
 	return nullish__none_(tup(site__website_(ctx)), (
 		site__website
 	)=><DefinedTerm>{

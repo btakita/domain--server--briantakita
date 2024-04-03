@@ -17,8 +17,8 @@
 	"dependencies": {
 		"@rappstack/domain--any--blog": "workspace:*",
 		"@rappstack/domain--server--blog": "workspace:*",
-		"ctx-core": "^7.1.0",
-		"rebuildjs": "^0.69.0"
+		"ctx-core": "^7.1.1",
+		"rebuildjs": "^0.69.2"
 	},
 	"devDependencies": {
 		"bun-types": "latest"
