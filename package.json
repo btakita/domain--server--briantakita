@@ -17,13 +17,13 @@
 	"dependencies": {
 		"@rappstack/domain--any--blog": "workspace:*",
 		"@rappstack/domain--server--blog": "workspace:*",
-		"ctx-core": "^7.1.1",
-		"rebuildjs": "^0.69.2"
+		"ctx-core": "^7.1.2",
+		"rebuildjs": "^0.69.3"
 	},
 	"devDependencies": {
 		"bun-types": "latest"
 	},
 	"peerDependencies": {
-		"typescript": "^5.4.3"
+		"typescript": "^5.4.4"
 	}
 }
