@@ -198,6 +198,7 @@ export const [
 				'https://www.twitch.tv/briantakita', // follow
 				'https://vimeo.com/briantakita',
 				'https://forum.nim-lang.org/profile/btak',
+				'https://ask.libreoffice.org/u/btak/',
 			],
 		})
 	}),
