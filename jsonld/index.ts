@@ -200,6 +200,7 @@ export const [
 				'https://forum.nim-lang.org/profile/btak',
 				'https://ask.libreoffice.org/u/btak/',
 				'https://workplace.stackexchange.com/users/13747/brian-takita',
+				'https://es.discourse.group/u/btakita',
 			],
 		})
 	}),
