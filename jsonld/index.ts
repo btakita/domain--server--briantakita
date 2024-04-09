@@ -201,6 +201,8 @@ export const [
 				'https://ask.libreoffice.org/u/btak/',
 				'https://workplace.stackexchange.com/users/13747/brian-takita',
 				'https://es.discourse.group/u/btakita',
+				'https://users.rust-lang.org/u/btakita',
+				'https://forum.garudalinux.org/u/btakita',
 			],
 		})
 	}),
