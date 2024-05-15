@@ -203,6 +203,7 @@ export const [
 				'https://es.discourse.group/u/btakita',
 				'https://users.rust-lang.org/u/btakita',
 				'https://forum.garudalinux.org/u/btakita',
+				'https://civitai.com/user/btak',
 			],
 		})
 	}),
