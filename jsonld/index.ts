@@ -204,6 +204,7 @@ export const [
 				'https://users.rust-lang.org/u/btakita',
 				'https://forum.garudalinux.org/u/btakita',
 				'https://civitai.com/user/btak',
+				'https://community.neo4j.com/u/btakita',
 			],
 		})
 	}),
