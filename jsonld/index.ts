@@ -205,6 +205,7 @@ export const [
 				'https://forum.garudalinux.org/u/btakita',
 				'https://civitai.com/user/btak',
 				'https://community.neo4j.com/u/btakita',
+				'https://community.openai.com/u/brian.takita',
 			],
 		})
 	}),
