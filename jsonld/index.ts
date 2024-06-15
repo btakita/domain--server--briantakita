@@ -206,6 +206,7 @@ export const [
 				'https://civitai.com/user/btak',
 				'https://community.neo4j.com/u/btakita',
 				'https://community.openai.com/u/brian.takita',
+				'https://forums.fast.ai/u/btak',
 			],
 		})
 	}),
