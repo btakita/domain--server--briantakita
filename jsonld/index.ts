@@ -208,6 +208,8 @@ export const [
 				'https://community.openai.com/u/brian.takita',
 				'https://forums.fast.ai/u/btak',
 				'https://www.udio.com/creators/btak',
+				'https://discourse.jupyter.org/u/btak',
+				'https://www.geeksforgeeks.org/user/btak/',
 			],
 		})
 	}),
