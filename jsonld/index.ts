@@ -210,6 +210,7 @@ export const [
 				'https://www.udio.com/creators/btak',
 				'https://discourse.jupyter.org/u/btak',
 				'https://www.geeksforgeeks.org/user/btak/',
+				'https://hackmd.io/@btak',
 			],
 		})
 	}),
