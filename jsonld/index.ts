@@ -212,6 +212,7 @@ export const [
 				'https://www.geeksforgeeks.org/user/btak/',
 				'https://hackmd.io/@btak',
 				'https://community.brave.com/u/btak',
+				'https://discuss.pytorch.org/u/btakita',
 			],
 		})
 	}),
